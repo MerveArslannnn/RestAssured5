@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="807417ee-cce0-4044-8af0-9a6749e07ae9" name="Changes" comment="1.RestAssurred">
-      <change afterPath="$PROJECT_DIR$/src/test/java/hamcrest" afterDir="false" />
+    <list default="true" id="807417ee-cce0-4044-8af0-9a6749e07ae9" name="Changes" comment="1.RestAssurred - hasItem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/_01_ZippoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/_01_ZippoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,31 +39,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG._01_ZippoTest.checkHasItemy">
-    <configuration name="_01_ZippoTest.checkCountryInResponseBody" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="_01_ZippoTest" />
-      <option name="METHOD_NAME" value="checkCountryInResponseBody" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_01_ZippoTest.checkCountryInResponseBodyTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="_01_ZippoTest" />
-      <option name="METHOD_NAME" value="checkCountryInResponseBodyTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG._01_ZippoTest.queryParamTest2">
     <configuration name="_01_ZippoTest.checkHasItemy" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured5" />
       <option name="PACKAGE_NAME" value="" />
@@ -78,11 +52,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_01_ZippoTest.contantTypeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="_01_ZippoTest.combiningTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured5" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="_01_ZippoTest" />
-      <option name="METHOD_NAME" value="contantTypeTest" />
+      <option name="METHOD_NAME" value="combiningTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -90,11 +64,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_01_ZippoTest.statusCodeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="_01_ZippoTest.pathParamTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured5" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="_01_ZippoTest" />
-      <option name="METHOD_NAME" value="statusCodeTest" />
+      <option name="METHOD_NAME" value="pathParamTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_01_ZippoTest.queryParamTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="_01_ZippoTest" />
+      <option name="METHOD_NAME" value="queryParamTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_01_ZippoTest.queryParamTest2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="_01_ZippoTest" />
+      <option name="METHOD_NAME" value="queryParamTest2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -104,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG._01_ZippoTest.queryParamTest2" />
+        <item itemvalue="TestNG._01_ZippoTest.queryParamTest" />
+        <item itemvalue="TestNG._01_ZippoTest.pathParamTest" />
+        <item itemvalue="TestNG._01_ZippoTest.combiningTest" />
         <item itemvalue="TestNG._01_ZippoTest.checkHasItemy" />
-        <item itemvalue="TestNG._01_ZippoTest.checkCountryInResponseBodyTest" />
-        <item itemvalue="TestNG._01_ZippoTest.checkCountryInResponseBody" />
-        <item itemvalue="TestNG._01_ZippoTest.contantTypeTest" />
-        <item itemvalue="TestNG._01_ZippoTest.statusCodeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682357069923</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.RestAssurred - hasItem">
+      <created>1682359955368</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682359955368</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +149,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.RestAssurred" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.RestAssurred" />
+    <MESSAGE value="1.RestAssurred - hasItem" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.RestAssurred - hasItem" />
   </component>
 </project>

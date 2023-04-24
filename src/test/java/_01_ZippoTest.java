@@ -95,7 +95,7 @@ public void checkCountryInResponseBodyTest(){
                 .get("http://api.zippopotam.us/tr/01000")
 
                 .then()
-                //.log().body()
+                .log().body()
                 .statusCode(200)
                 .body("places.'place name'",hasItem("Dörtağaç Köyü"))
                 //bütün place name lerin herhangi birinde Dörtağaç Köyü var mı
@@ -103,6 +103,104 @@ public void checkCountryInResponseBodyTest(){
         ;
 
     }
+    @Test
+    public void bodyArrayHasSizeTest(){
+        given()
+
+                .when()
+                .get("http://api.zippopotam.us/us/90210")
+
+                .then()
+                //.log().body()
+                .statusCode(200)
+                .body("places",hasSize(1))
+
+        ;
+
+    }
+    @Test
+    public void combiningTest(){
+        given()
+
+                .when()
+                .get("http://api.zippopotam.us/us/90210")
+
+                .then()
+                //.log().body()
+                .statusCode(200)
+                .body("places",hasSize(1))
+                .body("places.state", hasItem("California"))
+                .body("places[0].'place name'",equalTo("Beverly Hills"))
+
+        ;
+
+    }
+
+    @Test
+    public void pathParamTest(){
+        given()
+                .pathParam("ulke","us")
+                .pathParam("postaKod",90210)
+                .log().uri()//request url(link) sonucunu göster dedik
+
+                .when()
+                .get("http://api.zippopotam.us/{ulke}/{postaKod}")
+
+                .then()
+                .statusCode(200)
+                //.log().body()
+
+
+        ;
+
+    }
+    @Test
+    public void queryParamTest(){
+        //https://gorest.co.in/public/v1/users?page=3
+        given()
+                .param("page",1) //?page=1 şeklinde linke ekleniyor
+                .log().uri()//request url(link) sonucunu göster dedik
+
+                .when()
+                .get("https://gorest.co.in/public/v1/users")//?page=1
+
+                .then()
+                .statusCode(200)
+        //.log().body()
+
+
+        ;
+
+    }
+
+    @Test
+    public void queryParamTest2(){
+        // https://gorest.co.in/public/v1/users?page=3
+        // bu linkteki 1 den 10 kadar sayfaları çağırdığınızda response daki donen page degerlerinin
+        // çağrılan page nosu ile aynı olup olmadığını kontrol ediniz.
+
+        for (int i = 1; i < 10; i++) {
+
+            given()
+                    .param("page", i) //?page=1 şeklinde linke ekleniyor
+
+                    .log().uri()//request url(link) sonucunu göster dedik
+
+                    .when()
+                    .get("https://gorest.co.in/public/v1/users")//?page=1
+
+                    .then()
+                    .statusCode(200)
+                    .body("meta.pagination.page",equalTo(i))
+                    .log().body()
+
+
+            ;
+        }
+    }
+
+
+
 
 
 
