@@ -1,7 +1,6 @@
 import Model.Location;
 import Model.Place;
 import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
@@ -15,10 +14,9 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class _01_ZippoTest {
+public class ZippoTest {
     @Test
     public void test1(){
         given()
